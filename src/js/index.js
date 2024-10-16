@@ -31,12 +31,12 @@ const renderSecondsCounter = () => {
 
             <div className="text-center mt-4 w-100 px-3">
                 <input
-                    id="finDelMundo"
+                    id="todoTermina"
                     className="form-control mb-3"
                     onChange={(event) => {
                         seconds = event.target.value;
                     }}
-                    placeholder="Ingresar la cantidad de segundos para la cuenta regresiva"
+                    placeholder="Cantidad de segundos para la cuenta atras"
                     type="number"
                 />
                 <div className="d-flex justify-content-center flex-wrap w-100">
@@ -53,7 +53,7 @@ const renderSecondsCounter = () => {
                     <button
                         onClick={() => {
                             seconds = 0;
-                            document.querySelector("#finDelMundo").value = undefined;
+                            document.querySelector("#todoTermina").value = undefined;
                         }}
                         type="button"
                         className="btn m-2 rounded btn-secondary w-25"
